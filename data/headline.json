@@ -1,0 +1,211 @@
+{
+  "detail": {
+    "A": {
+      "missing_share": 0.3916149506456299,
+      "bounded": false,
+      "h": {
+        "1": {
+          "full": {
+            "weeks": 604,
+            "episodes": 28,
+            "enough": true,
+            "est": -2.6623788675703066
+          },
+          "dev": {
+            "weeks": 336,
+            "episodes": 18,
+            "enough": true,
+            "est": -4.084798551315453
+          },
+          "hold": {
+            "weeks": 238,
+            "episodes": 9,
+            "enough": true,
+            "est": -0.9228118322235938
+          },
+          "ci_low": -6.0654583315166875,
+          "ci_high": 0.46916157711929085,
+          "p": 0.1087,
+          "mde": 4.800000000000001,
+          "r100": -53.35271141968791,
+          "block_share": 0.4,
+          "events": 1616,
+          "benchmark": 12.223601828680644
+        },
+        "3": {
+          "full": {
+            "weeks": 548,
+            "episodes": 9,
+            "enough": true,
+            "est": -0.9265510627680212
+          },
+          "dev": {
+            "weeks": 305,
+            "episodes": 6,
+            "enough": true,
+            "est": 0.7969810104198711
+          },
+          "hold": {
+            "weeks": 182,
+            "episodes": 3,
+            "enough": true,
+            "est": -3.1320326574039172
+          },
+          "ci_low": -2.5097054336889904,
+          "ci_high": 0.7609116558363009,
+          "p": 0.2715,
+          "mde": 2.4000000000000004,
+          "r100": -55.59809712173295,
+          "block_share": 0.4,
+          "events": 1477,
+          "benchmark": 8.585165747508363
+        },
+        "5": {
+          "full": {
+            "weeks": 486,
+            "episodes": 6,
+            "enough": true,
+            "est": -0.9889795652500208
+          },
+          "dev": {
+            "weeks": 270,
+            "episodes": 3,
+            "enough": true,
+            "est": 0.15132514719917678
+          },
+          "hold": {
+            "weeks": 120,
+            "episodes": 2,
+            "enough": false,
+            "est": -2.819370857820324
+          },
+          "ci_low": -2.3957952961744207,
+          "ci_high": 0.3411023043171518,
+          "p": 0.161,
+          "mde": 1.9500000000000004,
+          "r100": -60.04850760940676,
+          "block_share": 0.3333333333333333,
+          "events": 1207,
+          "benchmark": 8.404775166752621
+        }
+      }
+    },
+    "B": {
+      "missing_share": 0.2453487616933924,
+      "bounded": false,
+      "h": {
+        "1": {
+          "full": {
+            "weeks": 158,
+            "episodes": 13,
+            "enough": true,
+            "est": -1.7539615516161118
+          },
+          "dev": {
+            "weeks": 24,
+            "episodes": 4,
+            "enough": true,
+            "est": -6.2162327672879245
+          },
+          "hold": {
+            "weeks": 117,
+            "episodes": 9,
+            "enough": true,
+            "est": -0.6528359170603968
+          },
+          "ci_low": -6.304033154915402,
+          "ci_high": 2.5891219760616324,
+          "p": 0.4484,
+          "mde": 6.45,
+          "r100": -32.516445517421104,
+          "block_share": 0.2,
+          "events": 266,
+          "benchmark": 14.695721049499582
+        },
+        "3": {
+          "full": {
+            "weeks": 136,
+            "episodes": 4,
+            "enough": true,
+            "est": -1.8869646590319618
+          },
+          "dev": {
+            "weeks": 12,
+            "episodes": 1,
+            "enough": false,
+            "est": -1.9069780251940744
+          },
+          "hold": {
+            "weeks": 95,
+            "episodes": 3,
+            "enough": true,
+            "est": -1.254803109382191
+          },
+          "ci_low": -3.9065183400944137,
+          "ci_high": 0.11179249933327821,
+          "p": 0.0659,
+          "mde": 3.0500000000000003,
+          "r100": -34.99378047068769,
+          "block_share": 0.25,
+          "events": 233,
+          "benchmark": 11.083256920788068
+        },
+        "5": {
+          "full": {
+            "weeks": 102,
+            "episodes": 3,
+            "enough": true,
+            "est": -1.479470396927886
+          },
+          "dev": {
+            "weeks": 0,
+            "episodes": 0,
+            "enough": false,
+            "est": null
+          },
+          "hold": {
+            "weeks": 61,
+            "episodes": 2,
+            "enough": false,
+            "est": -0.9030261428318411
+          },
+          "ci_low": -2.8532283157040035,
+          "ci_high": 0.018932805900552175,
+          "p": 0.0445,
+          "mde": 2.1,
+          "r100": -39.334526327363456,
+          "block_share": 0.0,
+          "events": 163,
+          "benchmark": 10.259900986962077
+        }
+      }
+    }
+  },
+  "p_holm": {
+    "B5": 0.267,
+    "B3": 0.3295,
+    "A1": 0.4348,
+    "A5": 0.483,
+    "A3": 0.543,
+    "B1": 0.543
+  },
+  "verdict": {
+    "A": {
+      "answer": "cannot tell",
+      "reason": "missing",
+      "large": false,
+      "qualifying": [],
+      "harmful": []
+    },
+    "B": {
+      "answer": "cannot tell",
+      "reason": "missing",
+      "large": false,
+      "qualifying": [],
+      "harmful": []
+    }
+  },
+  "paragraph_B": "The data cannot say whether buying quality companies near their 200-week average helps. Too many missing companies. The range of what the data cannot rule out runs from -6.3 to 2.6 points a year, so the data does not settle the question. The weekly list is shown for interest, and a forward scoreboard will test it as new years arrive.",
+  "opened_at": "2026-11-09T21:27:47Z",
+  "end": "2026-11-09"
+}

@@ -1,0 +1,62 @@
+# Builds nothing: publishes the finished site folder, packs site.tar.gz for the portfolio, then checks the live page.
+name: pages
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: false
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read the build stamp
+        id: stamp
+        run: echo "stamp=$(grep -o 'name="build" content="[^"]*"' site/index.html | sed 's/.*content="//;s/"//')" >> "$GITHUB_OUTPUT"
+      - name: Pack site.tar.gz
+        run: |
+          tar -czf site.tar.gz -C site .
+          sha256sum site.tar.gz > site.tar.gz.sha256
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
+      - name: Publish the archive to the latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view latest >/dev/null 2>&1 || gh release create latest --title latest --notes "Weekly site archive"
+          gh release upload latest site.tar.gz site.tar.gz.sha256 --clobber
+  smoke:
+    needs: deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the live page
+        run: |
+          want=$(grep -o 'name="build" content="[^"]*"' site/index.html | sed 's/.*content="//;s/"//')
+          base=https://rohanjain2312.github.io/200-week-line
+          for i in 1 2 3 4 5 6; do
+            code=$(curl -s -o page.html -w '%{http_code}' "$base/")
+            got=$(grep -o 'name="build" content="[^"]*"' page.html | sed 's/.*content="//;s/"//')
+            [ "$code" = 200 ] && [ "$got" = "$want" ] && break
+            sleep 20
+          done
+          [ "$code" = 200 ] || { echo "status $code"; exit 1; }
+          [ "$got" = "$want" ] || { echo "stamp mismatch: live '$got', expected '$want'"; exit 1; }
+          curl -sf -o /dev/null "$base/static/style.css"
+          curl -sf -o /dev/null "$base/figures/answer.svg"
+          echo ok
