@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="build" content="local-20261110T081616Z">
+<meta name="build" content="local-20261110T082607Z">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The 200-week line: does it help?</title>
+<title>Company by company</title>
 <meta name="description" content="A plain-language test of the 200-week average idea.">
-<meta property="og:title" content="The 200-week line: does it help?">
+<meta property="og:title" content="Company by company">
 <meta property="og:description" content="A plain-language test of the 200-week average idea.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://rohanjain2312.github.io/200-week-line/">
@@ -17,114 +17,691 @@
 </head>
 <body>
 <header>
-<nav><a href="/200-week-line/">The answer</a><a href="/200-week-line/week.html">This week</a><a href="/200-week-line/companies.html">Company by company</a><a href="/200-week-line/method.html">How we tested it</a><a href="/200-week-line/glossary.html">Words explained</a><a href="https://rohanjain.pro/">Back to rohanjain.pro</a></nav>
+<nav><a href="/200-week-line/">Company by company</a><a href="/200-week-line/week.html">This week</a><a href="/200-week-line/answer.html">The answer</a><a href="/200-week-line/method.html">How we tested it</a><a href="/200-week-line/glossary.html">Words explained</a><a href="https://rohanjain.pro/">Back to rohanjain.pro</a></nav>
 </header>
-<main>
+<main class="wide">
 
-<h1>Does a stock near its 200-week average do better?</h1>
-<h2>What is this?</h2>
-<p>Some people say: when a stock falls close to its 200-week average, it is a good time to buy. The 200-week average is just the average price over the last 200 weeks, about four years. It is a line on a price chart.</p>
-<p>We checked if that idea really works. We looked at strong, well-run US companies. We compared the ones sitting near that line with similar ones that were not, in the same week. Then we saw who made more money over the next one, three and five years.</p>
-
-<h2>What would have happened to $10,000?</h2>
-<figure>
-<img src="/200-week-line/figures/growth.svg" alt="Two lines: the same start money grown in the whole index, and in strong companies bought near the line." width="720" height="420">
-<figcaption>Since 2010, $10,000 in the whole index grew to $67,412. $10,000 following the 200-week rule grew to $40,440. How to read: higher is better. Each strong company was bought the week it came near the line and held for three years. What this does not show: dividends, trading costs, or companies that went bust. Free data does not have those, which flatters both lines. This is an example, not the fair test, which is further down.</figcaption>
-</figure>
-
-<h2>The short answer</h2>
-<div class="verdict">
-<p><strong>The data cannot tell.</strong></p>
-<p>The data cannot say whether buying quality companies near their 200-week average helps. Too many missing companies. The range of what the data cannot rule out runs from -6.3 to 2.6 points a year, so the data does not settle the question. The weekly list is shown for interest, and a forward scoreboard will test it as new years arrive.</p>
+<h1>Company by company</h1>
+<p>Some people say a good company is a bargain when its price falls to its 200-week average, which is the average price over about four years. This site tests that idea on strong US companies, and updates every week.</p>
+<p>These are the 73 strong companies. They are the same ones as on the <a href="/200-week-line/week.html">this week</a> page. The overall study result is on the <a href="/200-week-line/answer.html">answer page</a>. For each one we asked: what if you had put $10,000 in the week it fell near its 200-week average, and held it for three years? And what if you had put the same money in on any other week?</p>
+<p>Both money columns are averages over every time that happened since 2010, with trading costs taken off. The chart shows the price divided by its 200-week average. The grey line is the average, and the orange dots are the dip weeks.</p>
+<p><strong>Buying on the dip beat other weeks for 43 of the 53 companies that had a finished dip.</strong> This is a history lesson, not advice. These are companies that did well enough to pass the test today, so the picture is kinder than real life. Free data also leaves out companies that went bust.</p>
+<div class="controls">
+<label for="f-text">Search by name<input type="text" id="f-text" placeholder="Type a name or ticker"></label>
+<label for="f-sector">Sector<select id="f-sector"><option value="">All sectors</option><option value="Cars and transport equipment">Cars and transport equipment</option><option value="Communication">Communication</option><option value="Construction">Construction</option><option value="Consumer goods">Consumer goods</option><option value="Food, drink and tobacco">Food, drink and tobacco</option><option value="Health care">Health care</option><option value="Industrials">Industrials</option><option value="Mining and energy">Mining and energy</option><option value="Services">Services</option><option value="Stores and restaurants">Stores and restaurants</option><option value="Technology">Technology</option><option value="Transport">Transport</option><option value="Wholesale">Wholesale</option></select></label>
+<label for="f-sub">Sub sector<select id="f-sub"><option value="">All sub sectors</option><option value="Air-Cond &amp; Warm Air Heatg Equip &amp; Comm &amp; Indl Refrig Equip">Air-Cond &amp; Warm Air Heatg Equip &amp; Comm &amp; Indl Refrig Equip</option><option value="Aircraft Engines &amp; Engine Parts">Aircraft Engines &amp; Engine Parts</option><option value="Arrangement Of  Transportation Of  Freight &amp; Cargo">Arrangement Of  Transportation Of  Freight &amp; Cargo</option><option value="Beverages">Beverages</option><option value="Cigarettes">Cigarettes</option><option value="Computer Communications Equipment">Computer Communications Equipment</option><option value="Electrical Work">Electrical Work</option><option value="Electronic Components, Nec">Electronic Components, Nec</option><option value="Electronic Computers">Electronic Computers</option><option value="Electronic Connectors">Electronic Connectors</option><option value="Engines &amp; Turbines">Engines &amp; Turbines</option><option value="Farm Machinery &amp; Equipment">Farm Machinery &amp; Equipment</option><option value="Heavy Construction Other Than Bldg Const - Contractors">Heavy Construction Other Than Bldg Const - Contractors</option><option value="Hotels &amp; Motels">Hotels &amp; Motels</option><option value="Industrial Instruments For Measurement, Display, And Control">Industrial Instruments For Measurement, Display, And Control</option><option value="Industrial Organic Chemicals">Industrial Organic Chemicals</option><option value="Laboratory Analytical Instruments">Laboratory Analytical Instruments</option><option value="Measuring &amp; Controlling Devices, Nec">Measuring &amp; Controlling Devices, Nec</option><option value="Miscellaneous Manufacturing Industries">Miscellaneous Manufacturing Industries</option><option value="Oil &amp; Gas Field Services, Nec">Oil &amp; Gas Field Services, Nec</option><option value="Orthopedic, Prosthetic &amp; Surgical Appliances &amp; Supplies">Orthopedic, Prosthetic &amp; Surgical Appliances &amp; Supplies</option><option value="Paints, Varnishes, Lacquers, Enamels &amp; Allied Prods">Paints, Varnishes, Lacquers, Enamels &amp; Allied Prods</option><option value="Petroleum Refining">Petroleum Refining</option><option value="Pharmaceutical Preparations">Pharmaceutical Preparations</option><option value="Printed Circuit Boards">Printed Circuit Boards</option><option value="Radio &amp; Tv Broadcasting &amp; Communications Equipment">Radio &amp; Tv Broadcasting &amp; Communications Equipment</option><option value="Retail-Building Materials, Hardware, Garden Supply">Retail-Building Materials, Hardware, Garden Supply</option><option value="Retail-Catalog &amp; Mail-Order Houses">Retail-Catalog &amp; Mail-Order Houses</option><option value="Retail-Eating  Places">Retail-Eating  Places</option><option value="Retail-Family Clothing Stores">Retail-Family Clothing Stores</option><option value="Retail-Home Furniture, Furnishings &amp; Equipment Stores">Retail-Home Furniture, Furnishings &amp; Equipment Stores</option><option value="Retail-Lumber &amp; Other Building Materials Dealers">Retail-Lumber &amp; Other Building Materials Dealers</option><option value="Retail-Radio, Tv &amp; Consumer Electronics Stores">Retail-Radio, Tv &amp; Consumer Electronics Stores</option><option value="Retail-Retail Stores, Nec">Retail-Retail Stores, Nec</option><option value="Retail-Variety Stores">Retail-Variety Stores</option><option value="Semiconductors &amp; Related Devices">Semiconductors &amp; Related Devices</option><option value="Services-Business Services, Nec">Services-Business Services, Nec</option><option value="Services-Commercial Physical &amp; Biological Research">Services-Commercial Physical &amp; Biological Research</option><option value="Services-Computer Integrated Systems Design">Services-Computer Integrated Systems Design</option><option value="Services-Computer Programming Services">Services-Computer Programming Services</option><option value="Services-Computer Programming, Data Processing, Etc.">Services-Computer Programming, Data Processing, Etc.</option><option value="Services-Consumer Credit Reporting, Collection Agencies">Services-Consumer Credit Reporting, Collection Agencies</option><option value="Services-Engineering, Accounting, Research, Management">Services-Engineering, Accounting, Research, Management</option><option value="Services-Equipment Rental &amp; Leasing, Nec">Services-Equipment Rental &amp; Leasing, Nec</option><option value="Services-Prepackaged Software">Services-Prepackaged Software</option><option value="Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics">Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics</option><option value="Special Industry Machinery, Nec">Special Industry Machinery, Nec</option><option value="Surgical &amp; Medical Instruments &amp; Apparatus">Surgical &amp; Medical Instruments &amp; Apparatus</option><option value="Telephone Communications (No Radiotelephone)">Telephone Communications (No Radiotelephone)</option><option value="Transportation Services">Transportation Services</option><option value="Trucking &amp; Courier Services (No Air)">Trucking &amp; Courier Services (No Air)</option><option value="Trucking (No Local)">Trucking (No Local)</option><option value="Water Transportation">Water Transportation</option><option value="Wholesale-Durable Goods">Wholesale-Durable Goods</option><option value="Wholesale-Electronic Parts &amp; Equipment, Nec">Wholesale-Electronic Parts &amp; Equipment, Nec</option></select></label>
 </div>
-<ul>
-<li><strong>In plain words:</strong> we could not prove the idea works, and we could not prove it fails.</li>
-<li><strong>Why:</strong> the free price data we can use leaves out many companies that later dropped out of the index. About 39% of the weeks are missing in the first test and 25% in the second. That is too many for a firm answer.</li>
-<li><strong>What it hints at:</strong> Cannot tell does not mean no harm. In 6 of 6 test and holding-time pairs the best guess was below zero, and the ranges still include zero or a small gain. Random picks did better than the dip picks in most draws for 6 of 6 pairs.</li>
-</ul>
-<p><strong>So please do not read this page as advice to buy or avoid anything.</strong> It is a test of one idea, nothing more.</p>
-<p>This page updates every week. <a href="/200-week-line/week.html">See this week's list</a>. New words are explained on the <a href="/200-week-line/glossary.html">words page</a>.</p>
-
-<details>
-<summary><strong>Show the full numbers and charts (harder to read)</strong></summary>
-<h2>The numbers</h2>
-<p>"Gap" is how many percentage points a year the near-the-line stocks earned more than the others, after trading costs. Below zero means they did worse. "Range" is what the data cannot rule out. If the range includes zero, there may be no real gap. "Price only" looks at all large companies. "Quality companies" looks only at strong, well-run ones. "Weeks" is how many weeks the idea gave a buy signal.</p>
-
-<table>
-<thead><tr><th>Which group</th><th>Years held</th><th>Gap (points a year)</th><th>Range</th><th>Weeks</th></tr></thead>
+<p class="small" id="count"></p>
+<div class="table-wrap">
+<table class="data" id="t">
+<thead><tr><th><button type="button">Company</button></th><th class="lowpri"><button type="button">Sector</button></th><th class="subcol"><button type="button">Sub sector</button></th><th class="num lowpri"><button type="button">Times it dipped</button></th><th class="num"><button type="button">$10,000 after a dip, three years later</button></th><th class="num"><button type="button">$10,000 from any other week, three years later</button></th><th><button type="button">Better</button></th><th class="chartcol">Chart</th><th hidden>.</th></tr></thead>
 <tbody>
 
-<tr><td>Price only</td><td>1</td><td>-2.7</td><td>-6.1 to 0.5</td><td>604</td></tr>
+<tr data-name="nvda nvidia corp" data-sector="Technology" data-sub="Semiconductors &amp; Related Devices" data-zone="no">
+<td class="co" data-sort="Nvidia Corp"><strong>Nvidia Corp</strong><span>NVDA</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Semiconductors &amp; Related Devices</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="94010.2924989139">$94,010</td>
+<td class="num" data-sort="48604.685321842095">$48,605</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/NVDA.svg" alt="NVDA: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
 
-<tr><td>Price only</td><td>3</td><td>-0.9</td><td>-2.5 to 0.8</td><td>548</td></tr>
+<tr data-name="lrcx lam research corp" data-sector="Industrials" data-sub="Special Industry Machinery, Nec" data-zone="no">
+<td class="co" data-sort="Lam Research Corp"><strong>Lam Research Corp</strong><span>LRCX</span></td>
+<td class="sec lowpri">Industrials</td><td class="sub subcol">Special Industry Machinery, Nec</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="42725.93097480413">$42,726</td>
+<td class="num" data-sort="26980.687418474492">$26,981</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/LRCX.svg" alt="LRCX: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
 
-<tr><td>Price only</td><td>5</td><td>-1.0</td><td>-2.4 to 0.3</td><td>486</td></tr>
+<tr data-name="aapl apple inc." data-sector="Technology" data-sub="Electronic Computers" data-zone="no">
+<td class="co" data-sort="Apple Inc."><strong>Apple Inc.</strong><span>AAPL</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Electronic Computers</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="33783.8760504222">$33,784</td>
+<td class="num" data-sort="19878.5771558125">$19,879</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/AAPL.svg" alt="AAPL: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
 
-<tr><td>Quality companies</td><td>1</td><td>-1.8</td><td>-6.3 to 2.6</td><td>158</td></tr>
+<tr data-name="anet arista networks, inc." data-sector="Technology" data-sub="Computer Communications Equipment" data-zone="no">
+<td class="co" data-sort="Arista Networks, Inc."><strong>Arista Networks, Inc.</strong><span>ANET</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Computer Communications Equipment</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="27355.674273576926">$27,356</td>
+<td class="num" data-sort="30474.245241046956">$30,474</td>
+<td>Other weeks</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/ANET.svg" alt="ANET: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
 
-<tr><td>Quality companies</td><td>3</td><td>-1.9</td><td>-3.9 to 0.1</td><td>136</td></tr>
+<tr data-name="wsm williams sonoma inc" data-sector="Stores and restaurants" data-sub="Retail-Home Furniture, Furnishings &amp; Equipment Stores" data-zone="no">
+<td class="co" data-sort="Williams Sonoma Inc"><strong>Williams Sonoma Inc</strong><span>WSM</span></td>
+<td class="sec lowpri">Stores and restaurants</td><td class="sub subcol">Retail-Home Furniture, Furnishings &amp; Equipment Stores</td>
+<td class="num lowpri" data-sort="3">3</td>
+<td class="num" data-sort="26317.48662808796">$26,317</td>
+<td class="num" data-sort="17614.983091233302">$17,615</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/WSM.svg" alt="WSM: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
 
-<tr><td>Quality companies</td><td>5</td><td>-1.5</td><td>-2.9 to 0.0</td><td>102</td></tr>
+<tr data-name="eme emcor group, inc." data-sector="Construction" data-sub="Electrical Work" data-zone="no">
+<td class="co" data-sort="Emcor Group, Inc."><strong>Emcor Group, Inc.</strong><span>EME</span></td>
+<td class="sec lowpri">Construction</td><td class="sub subcol">Electrical Work</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="25205.244664034915">$25,205</td>
+<td class="num" data-sort="23224.978622421146">$23,225</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/EME.svg" alt="EME: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="keys keysight technologies, inc." data-sector="Technology" data-sub="Industrial Instruments For Measurement, Display, And Control" data-zone="no">
+<td class="co" data-sort="Keysight Technologies, Inc."><strong>Keysight Technologies, Inc.</strong><span>KEYS</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Industrial Instruments For Measurement, Display, And Control</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="25122.59734859758">$25,123</td>
+<td class="num" data-sort="13344.83297117449">$13,345</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/KEYS.svg" alt="KEYS: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="meta meta platforms, inc." data-sector="Technology" data-sub="Services-Computer Programming, Data Processing, Etc." data-zone="no">
+<td class="co" data-sort="Meta Platforms, Inc."><strong>Meta Platforms, Inc.</strong><span>META</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Services-Computer Programming, Data Processing, Etc.</td>
+<td class="num lowpri" data-sort="3">3</td>
+<td class="num" data-sort="24009.880163363705">$24,010</td>
+<td class="num" data-sort="14786.40421262643">$14,786</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/META.svg" alt="META: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="cdw cdw corp" data-sector="Stores and restaurants" data-sub="Retail-Catalog &amp; Mail-Order Houses" data-zone="no">
+<td class="co" data-sort="Cdw Corp"><strong>Cdw Corp</strong><span>CDW</span></td>
+<td class="sec lowpri">Stores and restaurants</td><td class="sub subcol">Retail-Catalog &amp; Mail-Order Houses</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="23050.861699207842">$23,051</td>
+<td class="num" data-sort="18800.540995789805">$18,801</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/CDW.svg" alt="CDW: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="cost costco wholesale corp /new" data-sector="Stores and restaurants" data-sub="Retail-Variety Stores" data-zone="no">
+<td class="co" data-sort="Costco Wholesale Corp /New"><strong>Costco Wholesale Corp /New</strong><span>COST</span></td>
+<td class="sec lowpri">Stores and restaurants</td><td class="sub subcol">Retail-Variety Stores</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="22200.27222386654">$22,200</td>
+<td class="num" data-sort="18321.89679374601">$18,322</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/COST.svg" alt="COST: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="gww w.w. grainger, inc." data-sector="Wholesale" data-sub="Wholesale-Durable Goods" data-zone="no">
+<td class="co" data-sort="W.W. Grainger, Inc."><strong>W.W. Grainger, Inc.</strong><span>GWW</span></td>
+<td class="sec lowpri">Wholesale</td><td class="sub subcol">Wholesale-Durable Goods</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="22062.171940871365">$22,062</td>
+<td class="num" data-sort="16808.562205581078">$16,809</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/GWW.svg" alt="GWW: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="aph amphenol corp /de/" data-sector="Technology" data-sub="Electronic Connectors" data-zone="no">
+<td class="co" data-sort="Amphenol Corp /De/"><strong>Amphenol Corp /De/</strong><span>APH</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Electronic Connectors</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="20982.76519034935">$20,983</td>
+<td class="num" data-sort="19372.74237945846">$19,373</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/APH.svg" alt="APH: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="tsco tractor supply co /de/" data-sector="Stores and restaurants" data-sub="Retail-Building Materials, Hardware, Garden Supply" data-zone="no">
+<td class="co" data-sort="Tractor Supply Co /De/"><strong>Tractor Supply Co /De/</strong><span>TSCO</span></td>
+<td class="sec lowpri">Stores and restaurants</td><td class="sub subcol">Retail-Building Materials, Hardware, Garden Supply</td>
+<td class="num lowpri" data-sort="3">3</td>
+<td class="num" data-sort="20259.64736002551">$20,260</td>
+<td class="num" data-sort="14882.392457635804">$14,882</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/TSCO.svg" alt="TSCO: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="cmi cummins inc" data-sector="Industrials" data-sub="Engines &amp; Turbines" data-zone="no">
+<td class="co" data-sort="Cummins Inc"><strong>Cummins Inc</strong><span>CMI</span></td>
+<td class="sec lowpri">Industrials</td><td class="sub subcol">Engines &amp; Turbines</td>
+<td class="num lowpri" data-sort="5">5</td>
+<td class="num" data-sort="19957.115515482994">$19,957</td>
+<td class="num" data-sort="14722.791560875743">$14,723</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/CMI.svg" alt="CMI: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="ldos leidos holdings, inc." data-sector="Technology" data-sub="Services-Computer Integrated Systems Design" data-zone="no">
+<td class="co" data-sort="Leidos Holdings, Inc."><strong>Leidos Holdings, Inc.</strong><span>LDOS</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Services-Computer Integrated Systems Design</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="19316.372394960785">$19,316</td>
+<td class="num" data-sort="13769.332870073385">$13,769</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/LDOS.svg" alt="LDOS: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="syk stryker corp" data-sector="Health care" data-sub="Surgical &amp; Medical Instruments &amp; Apparatus" data-zone="no">
+<td class="co" data-sort="Stryker Corp"><strong>Stryker Corp</strong><span>SYK</span></td>
+<td class="sec lowpri">Health care</td><td class="sub subcol">Surgical &amp; Medical Instruments &amp; Apparatus</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="19268.862861903912">$19,269</td>
+<td class="num" data-sort="15329.934566483536">$15,330</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/SYK.svg" alt="SYK: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="v visa inc." data-sector="Services" data-sub="Services-Business Services, Nec" data-zone="no">
+<td class="co" data-sort="Visa Inc."><strong>Visa Inc.</strong><span>V</span></td>
+<td class="sec lowpri">Services</td><td class="sub subcol">Services-Business Services, Nec</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="18849.424293537275">$18,849</td>
+<td class="num" data-sort="16508.758111933585">$16,509</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/V.svg" alt="V: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="ame ametek inc/" data-sector="Technology" data-sub="Industrial Instruments For Measurement, Display, And Control" data-zone="no">
+<td class="co" data-sort="Ametek Inc/"><strong>Ametek Inc/</strong><span>AME</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Industrial Instruments For Measurement, Display, And Control</td>
+<td class="num lowpri" data-sort="3">3</td>
+<td class="num" data-sort="18786.64109061563">$18,787</td>
+<td class="num" data-sort="15100.735813577427">$15,101</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/AME.svg" alt="AME: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="fds factset research systems inc" data-sector="Technology" data-sub="Services-Computer Programming, Data Processing, Etc." data-zone="no">
+<td class="co" data-sort="Factset Research Systems Inc"><strong>Factset Research Systems Inc</strong><span>FDS</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Services-Computer Programming, Data Processing, Etc.</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="18661.878743103352">$18,662</td>
+<td class="num" data-sort="15247.509578035462">$15,248</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/FDS.svg" alt="FDS: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="wmt walmart inc." data-sector="Stores and restaurants" data-sub="Retail-Variety Stores" data-zone="no">
+<td class="co" data-sort="Walmart Inc."><strong>Walmart Inc.</strong><span>WMT</span></td>
+<td class="sec lowpri">Stores and restaurants</td><td class="sub subcol">Retail-Variety Stores</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="18257.408612252">$18,257</td>
+<td class="num" data-sort="14750.280204131894">$14,750</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/WMT.svg" alt="WMT: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="mcd mcdonalds corp" data-sector="Stores and restaurants" data-sub="Retail-Eating  Places" data-zone="no">
+<td class="co" data-sort="Mcdonalds Corp"><strong>Mcdonalds Corp</strong><span>MCD</span></td>
+<td class="sec lowpri">Stores and restaurants</td><td class="sub subcol">Retail-Eating  Places</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="17858.480913964817">$17,858</td>
+<td class="num" data-sort="14450.938503029007">$14,451</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/MCD.svg" alt="MCD: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="lii lennox international inc" data-sector="Industrials" data-sub="Air-Cond &amp; Warm Air Heatg Equip &amp; Comm &amp; Indl Refrig Equip" data-zone="no">
+<td class="co" data-sort="Lennox International Inc"><strong>Lennox International Inc</strong><span>LII</span></td>
+<td class="sec lowpri">Industrials</td><td class="sub subcol">Air-Cond &amp; Warm Air Heatg Equip &amp; Comm &amp; Indl Refrig Equip</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="17505.75522533457">$17,506</td>
+<td class="num" data-sort="16394.541628284074">$16,395</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/LII.svg" alt="LII: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="a agilent technologies, inc." data-sector="Technology" data-sub="Laboratory Analytical Instruments" data-zone="no">
+<td class="co" data-sort="Agilent Technologies, Inc."><strong>Agilent Technologies, Inc.</strong><span>A</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Laboratory Analytical Instruments</td>
+<td class="num lowpri" data-sort="3">3</td>
+<td class="num" data-sort="17461.5854703997">$17,462</td>
+<td class="num" data-sort="14251.730043575913">$14,252</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/A.svg" alt="A: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="vlo valero energy corp/tx" data-sector="Mining and energy" data-sub="Petroleum Refining" data-zone="no">
+<td class="co" data-sort="Valero Energy Corp/Tx"><strong>Valero Energy Corp/Tx</strong><span>VLO</span></td>
+<td class="sec lowpri">Mining and energy</td><td class="sub subcol">Petroleum Refining</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="17275.748055374184">$17,276</td>
+<td class="num" data-sort="18977.185283270715">$18,977</td>
+<td>Other weeks</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/VLO.svg" alt="VLO: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="ulta ulta beauty, inc." data-sector="Stores and restaurants" data-sub="Retail-Retail Stores, Nec" data-zone="no">
+<td class="co" data-sort="Ulta Beauty, Inc."><strong>Ulta Beauty, Inc.</strong><span>ULTA</span></td>
+<td class="sec lowpri">Stores and restaurants</td><td class="sub subcol">Retail-Retail Stores, Nec</td>
+<td class="num lowpri" data-sort="4">4</td>
+<td class="num" data-sort="17099.565652867906">$17,100</td>
+<td class="num" data-sort="14992.523436713353">$14,993</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/ULTA.svg" alt="ULTA: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="ecl ecolab inc." data-sector="Health care" data-sub="Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics" data-zone="no">
+<td class="co" data-sort="Ecolab Inc."><strong>Ecolab Inc.</strong><span>ECL</span></td>
+<td class="sec lowpri">Health care</td><td class="sub subcol">Soap, Detergents, Cleang Preparations, Perfumes, Cosmetics</td>
+<td class="num lowpri" data-sort="4">4</td>
+<td class="num" data-sort="16989.61518164725">$16,990</td>
+<td class="num" data-sort="13711.975480205185">$13,712</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/ECL.svg" alt="ECL: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="payx paychex inc" data-sector="Services" data-sub="Services-Engineering, Accounting, Research, Management" data-zone="no">
+<td class="co" data-sort="Paychex Inc"><strong>Paychex Inc</strong><span>PAYX</span></td>
+<td class="sec lowpri">Services</td><td class="sub subcol">Services-Engineering, Accounting, Research, Management</td>
+<td class="num lowpri" data-sort="3">3</td>
+<td class="num" data-sort="16743.710889905116">$16,744</td>
+<td class="num" data-sort="14851.526110410912">$14,852</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/PAYX.svg" alt="PAYX: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="adsk autodesk, inc." data-sector="Technology" data-sub="Services-Prepackaged Software" data-zone="no">
+<td class="co" data-sort="Autodesk, Inc."><strong>Autodesk, Inc.</strong><span>ADSK</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Services-Prepackaged Software</td>
+<td class="num lowpri" data-sort="3">3</td>
+<td class="num" data-sort="16109.733368464034">$16,110</td>
+<td class="num" data-sort="14864.69188307731">$14,865</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/ADSK.svg" alt="ADSK: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="tel te connectivity plc" data-sector="Wholesale" data-sub="Wholesale-Electronic Parts &amp; Equipment, Nec" data-zone="no">
+<td class="co" data-sort="Te Connectivity Plc"><strong>Te Connectivity Plc</strong><span>TEL</span></td>
+<td class="sec lowpri">Wholesale</td><td class="sub subcol">Wholesale-Electronic Parts &amp; Equipment, Nec</td>
+<td class="num lowpri" data-sort="3">3</td>
+<td class="num" data-sort="15967.557112496735">$15,968</td>
+<td class="num" data-sort="14371.761872120558">$14,372</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/TEL.svg" alt="TEL: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="qcom qualcomm inc/de" data-sector="Technology" data-sub="Radio &amp; Tv Broadcasting &amp; Communications Equipment" data-zone="no">
+<td class="co" data-sort="Qualcomm Inc/De"><strong>Qualcomm Inc/De</strong><span>QCOM</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Radio &amp; Tv Broadcasting &amp; Communications Equipment</td>
+<td class="num lowpri" data-sort="3">3</td>
+<td class="num" data-sort="15900.514044295158">$15,901</td>
+<td class="num" data-sort="11112.785964287914">$11,113</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/QCOM.svg" alt="QCOM: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="hal halliburton co" data-sector="Mining and energy" data-sub="Oil &amp; Gas Field Services, Nec" data-zone="no">
+<td class="co" data-sort="Halliburton Co"><strong>Halliburton Co</strong><span>HAL</span></td>
+<td class="sec lowpri">Mining and energy</td><td class="sub subcol">Oil &amp; Gas Field Services, Nec</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="15549.040297811322">$15,549</td>
+<td class="num" data-sort="10533.610566142539">$10,534</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/HAL.svg" alt="HAL: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="expd expeditors international of washington inc" data-sector="Transport" data-sub="Arrangement Of  Transportation Of  Freight &amp; Cargo" data-zone="no">
+<td class="co" data-sort="Expeditors International Of Washington Inc"><strong>Expeditors International Of Washington Inc</strong><span>EXPD</span></td>
+<td class="sec lowpri">Transport</td><td class="sub subcol">Arrangement Of  Transportation Of  Freight &amp; Cargo</td>
+<td class="num lowpri" data-sort="5">5</td>
+<td class="num" data-sort="15438.350889242007">$15,438</td>
+<td class="num" data-sort="13975.917842607107">$13,976</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/EXPD.svg" alt="EXPD: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="mpc marathon petroleum corp" data-sector="Mining and energy" data-sub="Petroleum Refining" data-zone="no">
+<td class="co" data-sort="Marathon Petroleum Corp"><strong>Marathon Petroleum Corp</strong><span>MPC</span></td>
+<td class="sec lowpri">Mining and energy</td><td class="sub subcol">Petroleum Refining</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="15383.578790771022">$15,384</td>
+<td class="num" data-sort="13165.033338650328">$13,165</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/MPC.svg" alt="MPC: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="ebay ebay inc" data-sector="Services" data-sub="Services-Business Services, Nec" data-zone="no">
+<td class="co" data-sort="Ebay Inc"><strong>Ebay Inc</strong><span>EBAY</span></td>
+<td class="sec lowpri">Services</td><td class="sub subcol">Services-Business Services, Nec</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="14971.14405662866">$14,971</td>
+<td class="num" data-sort="11310.31847047522">$11,310</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/EBAY.svg" alt="EBAY: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="bby best buy co inc" data-sector="Stores and restaurants" data-sub="Retail-Radio, Tv &amp; Consumer Electronics Stores" data-zone="no">
+<td class="co" data-sort="Best Buy Co Inc"><strong>Best Buy Co Inc</strong><span>BBY</span></td>
+<td class="sec lowpri">Stores and restaurants</td><td class="sub subcol">Retail-Radio, Tv &amp; Consumer Electronics Stores</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="14797.56368494634">$14,798</td>
+<td class="num" data-sort="9971.911605640309">$9,972</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/BBY.svg" alt="BBY: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="acn accenture plc" data-sector="Services" data-sub="Services-Business Services, Nec" data-zone="no">
+<td class="co" data-sort="Accenture Plc"><strong>Accenture Plc</strong><span>ACN</span></td>
+<td class="sec lowpri">Services</td><td class="sub subcol">Services-Business Services, Nec</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="14699.592797744921">$14,700</td>
+<td class="num" data-sort="14116.592354054987">$14,117</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/ACN.svg" alt="ACN: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="ko coca cola co" data-sector="Food, drink and tobacco" data-sub="Beverages" data-zone="no">
+<td class="co" data-sort="Coca Cola Co"><strong>Coca Cola Co</strong><span>KO</span></td>
+<td class="sec lowpri">Food, drink and tobacco</td><td class="sub subcol">Beverages</td>
+<td class="num lowpri" data-sort="3">3</td>
+<td class="num" data-sort="14101.504716099964">$14,102</td>
+<td class="num" data-sort="12433.294143420284">$12,433</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/KO.svg" alt="KO: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="ffiv f5, inc." data-sector="Technology" data-sub="Computer Communications Equipment" data-zone="no">
+<td class="co" data-sort="F5, Inc."><strong>F5, Inc.</strong><span>FFIV</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Computer Communications Equipment</td>
+<td class="num lowpri" data-sort="5">5</td>
+<td class="num" data-sort="13512.807373328838">$13,513</td>
+<td class="num" data-sort="11401.508742301918">$11,402</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/FFIV.svg" alt="FFIV: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="jnj johnson &amp; johnson" data-sector="Health care" data-sub="Pharmaceutical Preparations" data-zone="no">
+<td class="co" data-sort="Johnson &amp; Johnson"><strong>Johnson &amp; Johnson</strong><span>JNJ</span></td>
+<td class="sec lowpri">Health care</td><td class="sub subcol">Pharmaceutical Preparations</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="12997.28313506302">$12,997</td>
+<td class="num" data-sort="11897.35928713823">$11,897</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/JNJ.svg" alt="JNJ: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="ctsh cognizant technology solutions corp" data-sector="Technology" data-sub="Services-Computer Programming Services" data-zone="no">
+<td class="co" data-sort="Cognizant Technology Solutions Corp"><strong>Cognizant Technology Solutions Corp</strong><span>CTSH</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Services-Computer Programming Services</td>
+<td class="num lowpri" data-sort="5">5</td>
+<td class="num" data-sort="12903.712568075583">$12,904</td>
+<td class="num" data-sort="12596.529511402732">$12,597</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/CTSH.svg" alt="CTSH: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="chrw c. h. robinson worldwide, inc." data-sector="Transport" data-sub="Arrangement Of  Transportation Of  Freight &amp; Cargo" data-zone="no">
+<td class="co" data-sort="C. H. Robinson Worldwide, Inc."><strong>C. H. Robinson Worldwide, Inc.</strong><span>CHRW</span></td>
+<td class="sec lowpri">Transport</td><td class="sub subcol">Arrangement Of  Transportation Of  Freight &amp; Cargo</td>
+<td class="num lowpri" data-sort="7">7</td>
+<td class="num" data-sort="12534.71700818895">$12,535</td>
+<td class="num" data-sort="11768.487515599467">$11,768</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/CHRW.svg" alt="CHRW: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="lyb lyondellbasell industries n.v." data-sector="Health care" data-sub="Industrial Organic Chemicals" data-zone="no">
+<td class="co" data-sort="Lyondellbasell Industries N.V."><strong>Lyondellbasell Industries N.V.</strong><span>LYB</span></td>
+<td class="sec lowpri">Health care</td><td class="sub subcol">Industrial Organic Chemicals</td>
+<td class="num lowpri" data-sort="3">3</td>
+<td class="num" data-sort="12322.127352693034">$12,322</td>
+<td class="num" data-sort="10708.35837675179">$10,708</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/LYB.svg" alt="LYB: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="ppg ppg industries inc" data-sector="Health care" data-sub="Paints, Varnishes, Lacquers, Enamels &amp; Allied Prods" data-zone="no">
+<td class="co" data-sort="Ppg Industries Inc"><strong>Ppg Industries Inc</strong><span>PPG</span></td>
+<td class="sec lowpri">Health care</td><td class="sub subcol">Paints, Varnishes, Lacquers, Enamels &amp; Allied Prods</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="12137.04344038892">$12,137</td>
+<td class="num" data-sort="12183.889470956945">$12,184</td>
+<td>Other weeks</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/PPG.svg" alt="PPG: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="jbl jabil inc" data-sector="Technology" data-sub="Printed Circuit Boards" data-zone="no">
+<td class="co" data-sort="Jabil Inc"><strong>Jabil Inc</strong><span>JBL</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Printed Circuit Boards</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="10513.844163620552">$10,514</td>
+<td class="num" data-sort="24154.148890156106">$24,154</td>
+<td>Other weeks</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/JBL.svg" alt="JBL: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="algn align technology inc" data-sector="Health care" data-sub="Orthopedic, Prosthetic &amp; Surgical Appliances &amp; Supplies" data-zone="no">
+<td class="co" data-sort="Align Technology Inc"><strong>Align Technology Inc</strong><span>ALGN</span></td>
+<td class="sec lowpri">Health care</td><td class="sub subcol">Orthopedic, Prosthetic &amp; Surgical Appliances &amp; Supplies</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="10219.494810769897">$10,219</td>
+<td class="num" data-sort="20563.322693213442">$20,563</td>
+<td>Other weeks</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/ALGN.svg" alt="ALGN: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="vz verizon communications inc" data-sector="Communication" data-sub="Telephone Communications (No Radiotelephone)" data-zone="no">
+<td class="co" data-sort="Verizon Communications Inc"><strong>Verizon Communications Inc</strong><span>VZ</span></td>
+<td class="sec lowpri">Communication</td><td class="sub subcol">Telephone Communications (No Radiotelephone)</td>
+<td class="num lowpri" data-sort="3">3</td>
+<td class="num" data-sort="10119.98940693037">$10,120</td>
+<td class="num" data-sort="9340.298074154216">$9,340</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/VZ.svg" alt="VZ: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="ups united parcel service inc" data-sector="Transport" data-sub="Trucking &amp; Courier Services (No Air)" data-zone="no">
+<td class="co" data-sort="United Parcel Service Inc"><strong>United Parcel Service Inc</strong><span>UPS</span></td>
+<td class="sec lowpri">Transport</td><td class="sub subcol">Trucking &amp; Courier Services (No Air)</td>
+<td class="num lowpri" data-sort="4">4</td>
+<td class="num" data-sort="9817.381552033708">$9,817</td>
+<td class="num" data-sort="11320.838533678872">$11,321</td>
+<td>Other weeks</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/UPS.svg" alt="UPS: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="amcr amcor plc" data-sector="Consumer goods" data-sub="Miscellaneous Manufacturing Industries" data-zone="no">
+<td class="co" data-sort="Amcor Plc"><strong>Amcor Plc</strong><span>AMCR</span></td>
+<td class="sec lowpri">Consumer goods</td><td class="sub subcol">Miscellaneous Manufacturing Industries</td>
+<td class="num lowpri" data-sort="2">2</td>
+<td class="num" data-sort="9807.666403839057">$9,808</td>
+<td class="num" data-sort="9221.324289942415">$9,221</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/AMCR.svg" alt="AMCR: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="iqv iqvia holdings inc." data-sector="Services" data-sub="Services-Commercial Physical &amp; Biological Research" data-zone="no">
+<td class="co" data-sort="Iqvia Holdings Inc."><strong>Iqvia Holdings Inc.</strong><span>IQV</span></td>
+<td class="sec lowpri">Services</td><td class="sub subcol">Services-Commercial Physical &amp; Biological Research</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="9630.323267417742">$9,630</td>
+<td class="num" data-sort="8937.259778789568">$8,937</td>
+<td>The dip</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/IQV.svg" alt="IQV: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="adbe adobe inc." data-sector="Technology" data-sub="Services-Prepackaged Software" data-zone="no">
+<td class="co" data-sort="Adobe Inc."><strong>Adobe Inc.</strong><span>ADBE</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Services-Prepackaged Software</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="8865.4407082061">$8,865</td>
+<td class="num" data-sort="16383.180304920843">$16,383</td>
+<td>Other weeks</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/ADBE.svg" alt="ADBE: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="pep pepsico inc" data-sector="Food, drink and tobacco" data-sub="Beverages" data-zone="no">
+<td class="co" data-sort="Pepsico Inc"><strong>Pepsico Inc</strong><span>PEP</span></td>
+<td class="sec lowpri">Food, drink and tobacco</td><td class="sub subcol">Beverages</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="8681.271062884198">$8,681</td>
+<td class="num" data-sort="13081.58501040783">$13,082</td>
+<td>Other weeks</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/PEP.svg" alt="PEP: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="mo altria group, inc." data-sector="Food, drink and tobacco" data-sub="Cigarettes" data-zone="no">
+<td class="co" data-sort="Altria Group, Inc."><strong>Altria Group, Inc.</strong><span>MO</span></td>
+<td class="sec lowpri">Food, drink and tobacco</td><td class="sub subcol">Cigarettes</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="8627.196819113014">$8,627</td>
+<td class="num" data-sort="14497.772993169267">$14,498</td>
+<td>Other weeks</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/MO.svg" alt="MO: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="cmg chipotle mexican grill inc" data-sector="Stores and restaurants" data-sub="Retail-Eating  Places" data-zone="no">
+<td class="co" data-sort="Chipotle Mexican Grill Inc"><strong>Chipotle Mexican Grill Inc</strong><span>CMG</span></td>
+<td class="sec lowpri">Stores and restaurants</td><td class="sub subcol">Retail-Eating  Places</td>
+<td class="num lowpri" data-sort="1">1</td>
+<td class="num" data-sort="8578.01147928886">$8,578</td>
+<td class="num" data-sort="13260.63529490042">$13,261</td>
+<td>Other weeks</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/CMG.svg" alt="CMG: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="app applovin corp" data-sector="Technology" data-sub="Services-Computer Programming, Data Processing, Etc." data-zone="no">
+<td class="co" data-sort="Applovin Corp"><strong>Applovin Corp</strong><span>APP</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Services-Computer Programming, Data Processing, Etc.</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="0">n/a</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/APP.svg" alt="APP: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="de deere &amp; co" data-sector="Industrials" data-sub="Farm Machinery &amp; Equipment" data-zone="no">
+<td class="co" data-sort="Deere &amp; Co"><strong>Deere &amp; Co</strong><span>DE</span></td>
+<td class="sec lowpri">Industrials</td><td class="sub subcol">Farm Machinery &amp; Equipment</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="13746.978592592319">$13,747</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/DE.svg" alt="DE: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="expe expedia group, inc." data-sector="Transport" data-sub="Transportation Services" data-zone="no">
+<td class="co" data-sort="Expedia Group, Inc."><strong>Expedia Group, Inc.</strong><span>EXPE</span></td>
+<td class="sec lowpri">Transport</td><td class="sub subcol">Transportation Services</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="0">n/a</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/EXPE.svg" alt="EXPE: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="fast fastenal co" data-sector="Stores and restaurants" data-sub="Retail-Building Materials, Hardware, Garden Supply" data-zone="no">
+<td class="co" data-sort="Fastenal Co"><strong>Fastenal Co</strong><span>FAST</span></td>
+<td class="sec lowpri">Stores and restaurants</td><td class="sub subcol">Retail-Building Materials, Hardware, Garden Supply</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="0">n/a</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/FAST.svg" alt="FAST: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="flex flex ltd." data-sector="Technology" data-sub="Printed Circuit Boards" data-zone="no">
+<td class="co" data-sort="Flex Ltd."><strong>Flex Ltd.</strong><span>FLEX</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Printed Circuit Boards</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="0">n/a</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/FLEX.svg" alt="FLEX: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="hd home depot, inc." data-sector="Stores and restaurants" data-sub="Retail-Lumber &amp; Other Building Materials Dealers" data-zone="no">
+<td class="co" data-sort="Home Depot, Inc."><strong>Home Depot, Inc.</strong><span>HD</span></td>
+<td class="sec lowpri">Stores and restaurants</td><td class="sub subcol">Retail-Lumber &amp; Other Building Materials Dealers</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="18989.792469064592">$18,990</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/HD.svg" alt="HD: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="hon honeywell international inc" data-sector="Cars and transport equipment" data-sub="Aircraft Engines &amp; Engine Parts" data-zone="no">
+<td class="co" data-sort="Honeywell International Inc"><strong>Honeywell International Inc</strong><span>HON</span></td>
+<td class="sec lowpri">Cars and transport equipment</td><td class="sub subcol">Aircraft Engines &amp; Engine Parts</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="0">n/a</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/HON.svg" alt="HON: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="j jacobs solutions inc." data-sector="Construction" data-sub="Heavy Construction Other Than Bldg Const - Contractors" data-zone="no">
+<td class="co" data-sort="Jacobs Solutions Inc."><strong>Jacobs Solutions Inc.</strong><span>J</span></td>
+<td class="sec lowpri">Construction</td><td class="sub subcol">Heavy Construction Other Than Bldg Const - Contractors</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="8834.467642538606">$8,834</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/J.svg" alt="J: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="mco moodys corp /de/" data-sector="Technology" data-sub="Services-Consumer Credit Reporting, Collection Agencies" data-zone="no">
+<td class="co" data-sort="Moodys Corp /De/"><strong>Moodys Corp /De/</strong><span>MCO</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Services-Consumer Credit Reporting, Collection Agencies</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="13123.788095071412">$13,124</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/MCO.svg" alt="MCO: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="mgm mgm resorts international" data-sector="Services" data-sub="Hotels &amp; Motels" data-zone="no">
+<td class="co" data-sort="Mgm Resorts International"><strong>Mgm Resorts International</strong><span>MGM</span></td>
+<td class="sec lowpri">Services</td><td class="sub subcol">Hotels &amp; Motels</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="0">n/a</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/MGM.svg" alt="MGM: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="nxpi nxp semiconductors n.v." data-sector="Technology" data-sub="Semiconductors &amp; Related Devices" data-zone="no">
+<td class="co" data-sort="Nxp Semiconductors N.V."><strong>Nxp Semiconductors N.V.</strong><span>NXPI</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Semiconductors &amp; Related Devices</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="13461.674208122027">$13,462</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/NXPI.svg" alt="NXPI: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="odfl old dominion freight line, inc." data-sector="Transport" data-sub="Trucking (No Local)" data-zone="no">
+<td class="co" data-sort="Old Dominion Freight Line, Inc."><strong>Old Dominion Freight Line, Inc.</strong><span>ODFL</span></td>
+<td class="sec lowpri">Transport</td><td class="sub subcol">Trucking (No Local)</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="20836.900880460747">$20,837</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/ODFL.svg" alt="ODFL: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="pltr palantir technologies inc." data-sector="Technology" data-sub="Services-Prepackaged Software" data-zone="no">
+<td class="co" data-sort="Palantir Technologies Inc."><strong>Palantir Technologies Inc.</strong><span>PLTR</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Services-Prepackaged Software</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="0">n/a</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/PLTR.svg" alt="PLTR: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="ptc ptc inc." data-sector="Technology" data-sub="Services-Prepackaged Software" data-zone="no">
+<td class="co" data-sort="Ptc Inc."><strong>Ptc Inc.</strong><span>PTC</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Services-Prepackaged Software</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="18637.663500701055">$18,638</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/PTC.svg" alt="PTC: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="rcl royal caribbean cruises ltd" data-sector="Transport" data-sub="Water Transportation" data-zone="no">
+<td class="co" data-sort="Royal Caribbean Cruises Ltd"><strong>Royal Caribbean Cruises Ltd</strong><span>RCL</span></td>
+<td class="sec lowpri">Transport</td><td class="sub subcol">Water Transportation</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="0">n/a</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/RCL.svg" alt="RCL: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="rok rockwell automation, inc" data-sector="Technology" data-sub="Measuring &amp; Controlling Devices, Nec" data-zone="no">
+<td class="co" data-sort="Rockwell Automation, Inc"><strong>Rockwell Automation, Inc</strong><span>ROK</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Measuring &amp; Controlling Devices, Nec</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="0">n/a</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/ROK.svg" alt="ROK: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="rost ross stores, inc." data-sector="Stores and restaurants" data-sub="Retail-Family Clothing Stores" data-zone="no">
+<td class="co" data-sort="Ross Stores, Inc."><strong>Ross Stores, Inc.</strong><span>ROST</span></td>
+<td class="sec lowpri">Stores and restaurants</td><td class="sub subcol">Retail-Family Clothing Stores</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="0">n/a</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/ROST.svg" alt="ROST: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="ttd trade desk, inc." data-sector="Technology" data-sub="Services-Computer Programming, Data Processing, Etc." data-zone="no">
+<td class="co" data-sort="Trade Desk, Inc."><strong>Trade Desk, Inc.</strong><span>TTD</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Services-Computer Programming, Data Processing, Etc.</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="12777.961597195952">$12,778</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/TTD.svg" alt="TTD: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="uri united rentals, inc." data-sector="Technology" data-sub="Services-Equipment Rental &amp; Leasing, Nec" data-zone="no">
+<td class="co" data-sort="United Rentals, Inc."><strong>United Rentals, Inc.</strong><span>URI</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Services-Equipment Rental &amp; Leasing, Nec</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="0">n/a</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/URI.svg" alt="URI: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
+
+<tr data-name="vrt vertiv holdings co" data-sector="Technology" data-sub="Electronic Components, Nec" data-zone="no">
+<td class="co" data-sort="Vertiv Holdings Co"><strong>Vertiv Holdings Co</strong><span>VRT</span></td>
+<td class="sec lowpri">Technology</td><td class="sub subcol">Electronic Components, Nec</td>
+<td class="num lowpri" data-sort="0">0</td>
+<td class="num" data-sort="0">no finished dip yet</td>
+<td class="num" data-sort="0">n/a</td>
+<td>n/a</td>
+<td class="chartcol"><img src="/200-week-line/figures/co/VRT.svg" alt="VRT: price divided by its 200-week average since 2010, with orange dots on the dip weeks." width="140" height="44"></td><td hidden>.</td></tr>
 
 </tbody>
 </table>
-<h2>Six pictures</h2>
-<p>Each picture has a line telling you what to look at. You can skip them. The answer above is the main thing.</p>
-
-<figure>
-<h3>The idea in one picture</h3>
-<img src="/200-week-line/figures/idea.svg" alt="Two lines of price divided by its 200-week average, one that did well after the dip and one that did badly." width="720" height="420">
-<figcaption>Look at: how the line dips to the dashed zone, then what happened next. How to read: 100 means the price is exactly on its 200-week average. The orange line marks the dip. What this does not show: that this is typical. Two examples were picked by a seeded random draw.</figcaption>
-</figure>
-
-<figure>
-<h3>The answer</h3>
-<img src="/200-week-line/figures/answer.svg" alt="Ranges of the gap in points a year for each test and holding time, with the best guess as a dot." width="720" height="420">
-<figcaption>Look at: do the ranges cross zero? How to read: each bar is the range, the dot is the best guess, the dashed line is a gap that would matter. What this does not show: results for companies missing from free price data.</figcaption>
-</figure>
-
-<figure>
-<h3>Every time it happened</h3>
-<img src="/200-week-line/figures/every_time.svg" alt="One dot for every week with a dip, showing the gap in points a year, by calendar year." width="720" height="420">
-<figcaption>Look at: whether the dots sit in a few clumps or spread over many years. How to read: each dot is one week. Above zero means the near-the-line group did better. What this does not show: how many companies were behind each dot.</figcaption>
-</figure>
-
-<figure>
-<h3>Could luck do this?</h3>
-<img src="/200-week-line/figures/luck.svg" alt="Six small histograms of random-pick gaps with a bold line where the real result sits." width="720" height="420">
-<figcaption>Look at: where the bold line sits among the grey bars. How to read: grey bars are what random picks earn. A line in the middle means luck explains it. A line at the left means random picks usually did better than the dip picks. What this does not show: whether the random picks were fair for every year.</figcaption>
-</figure>
-
-<figure>
-<h3>Is it just good, cheap companies?</h3>
-<img src="/200-week-line/figures/factors.svg" alt="For each test and holding time, the raw gap and the gap after adjusting for common stock styles." width="720" height="420">
-<figcaption>Look at: how far each square moves from its circle. How to read: the square is the gap after removing what common stock styles explain. What this does not show: styles that are not in the standard five plus momentum.</figcaption>
-</figure>
-
-<figure>
-<h3>What if the missing companies went bust?</h3>
-<img src="/200-week-line/figures/stress.svg" alt="For each test and holding time, the gap in the main result and if missing companies lost everything." width="720" height="420">
-<figcaption>Look at: how far the square falls from the circle. How to read: circle is the main result, square assumes every missing company lost everything. What this does not show: the true result, which sits in between.</figcaption>
-</figure>
-
-<h2>Missing companies</h2>
-<p>Free price data leaves out many companies that were later removed from the index. 39% of company-weeks have no price in Test A and 25% in Test B. The last picture shows the gap if every missing company lost all its value.</p>
-
-</details>
-<h2>Can you trust this?</h2>
-<div class="box">
-<ul>
-<li>Years covered: from the first available data to 2026.</li>
-<li>Checks passed: 16 of 86.</li>
-<li>Companies with no price in the free data: 39% (price only test), 25% (quality test).</li>
-<li>Last update: 2026-11-10.</li>
-</ul>
 </div>
-<p>The rules, the cutoffs and the locked test years were written down before any results. See <a href="/200-week-line/method.html">how we tested it</a>.</p>
 
 </main>
 <footer class="small">
-<p>Built 2026-11-10. Build stamp: local-20261110T081616Z. This is research, not investment advice.</p>
+<p>Built 2026-11-10. Build stamp: local-20261110T082607Z. This is research, not investment advice.</p>
 </footer>
+<script src="/200-week-line/static/table.js"></script>
 </body>
 </html>
